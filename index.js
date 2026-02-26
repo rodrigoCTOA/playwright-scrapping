@@ -9,9 +9,6 @@ const { chromium } = require("playwright");
   await page.goto("https://www.horariodebrasilia.org");
   await page.waitForTimeout(2000);
 
-  await page.screenshot({ path: "screenshot.png", fullPage: true });
-  console.log("📸 Screenshot saved as screenshot.png");
-
   const currentDate = await page.locator("#dia-topo").textContent();
   console.log(`🕐 Brazil time: ${currentDate}`);
 
