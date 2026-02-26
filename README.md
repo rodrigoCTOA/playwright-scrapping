@@ -12,5 +12,3 @@ node index.js
 ## GitHub Actions
 
 The workflow can be triggered manually from the **Actions** tab in the repository.
-
-After execution, the screenshot is available in the **Artifacts** section of the workflow run.
